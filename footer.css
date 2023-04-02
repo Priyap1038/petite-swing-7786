@@ -1,0 +1,85 @@
+footer{
+    border-top: 2px solid rgba(66, 5, 5, 0.836);
+}
+#info>div{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    width: 70%;
+    margin: auto;
+    padding: 2%;
+}
+#info2{
+display: flex;
+flex-direction: row;
+gap: 5%;
+}
+#info>div>div{
+    width: 23%;
+    gap: 10%;
+}
+#info3{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#info3>div:nth-child(1){
+    width: 60%;
+}
+#info3>div:nth-child(2){
+    width: 60%;
+}
+#sticker{
+    display: flex;
+    gap: 5%;
+}
+#sticker>div{
+    width: 5%;
+    height: 5%;
+}
+#pho{
+    width: 100%;
+}
+#pho1{
+    width: 30%;
+    height:30%;
+}
+#maintab{
+    background-color:#bd745c;
+}
+table{
+    width: 70%;
+    margin: auto;
+    padding-top: 2%;
+}
+td :nth-child(1){
+    width: 100%;
+}
+#tab{
+    width: 250px; 
+    vertical-align: baseline;
+}
+#tab2{
+ text-align: justify;
+}
+@media only screen and (max-width: 800px) {
+    #info>div{
+        display: flex;
+        flex-direction: row;
+    }
+    #info2{
+        display: flex;
+        flex-direction: row;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    #info>div{
+        display: flex;
+        flex-direction: column;
+    }
+    #info2{
+        display: flex;
+        flex-direction: row;
+    }
+  }

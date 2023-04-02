@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="footer.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #container{
+            display: flex;
+            /* flex-direction: row; */
+            width: 50%;
+            margin: auto;
+            gap: 2%;
+            border:2px solid  #e78767;
+        }
+        #pho{
+            width: 50%;
+        }
+        form{
+            width: 50%;
+            text-align: center;
+        }
+       #pho>img{
+        width: 100%;
+       }
+       form input{
+        width: 90%;
+        margin: 2%;
+        height: 10%;
+       }
+       #submit{
+        background-color: #e78767;
+        border: none;
+       }
+       #sign:hover{
+        color: #e78767;
+       }
+
+    </style>
+</head>
+<body>
+    
+   <nav>
+
+   </nav>
+   <div id="container">
+    <div id="pho">
+        <img src="https://www.ulcdn.net/media/subscription_popup/Set-the-scene-Sign-up-pop-up.jpg?1679855082" alt="">
+    </div>
+        <form>
+          <h2>Signup to explore great designs</h2>
+          <label for="login"><h3>Login with your email ID</h3></label>
+         <input type=" email" placeholder="Email Address" id="email">
+         <input type="password" placeholder="Password" id="password">
+         <input type="submit" id="submit">
+         <p>Don't have an account? <a href="./signup.html" id="sign">Sign-up</a> </p>
+        </form>
+   </div>
+
+</body>
+</html>
+
+<script type="module" src="./signup.js">
+</script>

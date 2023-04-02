@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+      /* Write all necessery css here  */
+     
+      #main{
+            width:100%;
+        display:flex;
+        /* margin-top:200px; */
+
+        }
+        #product-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        width:85%;
+        margin: auto;
+        
+        
+      }
+      #filterLeft{
+        width:15%;
+        display:flex;
+        flex-flow:column;
+        gap:20px;
+        /* border: 2px solid brown ; */
+        margin: 10px;
+      }
+      #sortOrder{
+        background-color: goldenrod;
+        color: black;
+
+      }
+      
+
+      #product-container>div{
+        
+        margin: 20px;
+        transition:.9s;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding:8px;
+        border-radius:5px;
+        text-align:center;
+      }
+      #product-container>div>img:hover{
+
+        cursor:pointer;
+        scale:1.03;
+      }
+      #product-container>div>img{
+        width: 100%;
+        transition:.9s;
+        /* height: 150px; */
+      }
+      #product-container>div>button{
+        border: none;
+        background-color: #e78767;
+        border-radius: 5px;
+        padding: 3px;
+      }
+      #filter{
+        display: block;
+        padding: 3px;
+        
+      }
+
+      select{
+        border-radius:10px;
+        padding:15px;
+      }
+
+      .loaderImg{
+        width:20%;
+        display:block;
+        margin:auto;
+        margin-top:100px;
+      }
+      @media only screen and (max-width: 800px) {
+  #product-container{
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #product-container{
+    display: grid;
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+    </style>
+  </head>
+
+  <body>
+    <nav>
+
+    </nav>
+    <div id="main">
+      <div id="filterLeft">
+
+          <select name="" id="sortOrder">
+              <option value="">Sort by Price</option>
+              <option value="asc">Low price to high price</option>
+              <option value="desc">High Price to low price</option>
+          </select>
+
+   <select id="filter">
+      <option value="">Filter By Category</option>
+      <option value="Sofa">Sofa</option>
+      <option value="Coffee table">Coffee table</option>
+      <option value="beds">beds</option>
+      <!-- <option value="Wardrobes">Wardrobes</option> -->
+      <option value="lighting">lighting</option>
+    </select>
+
+    <form action="" id="inBet">
+      <input type="text" name="" id="lower" placeholder="Min Price" required>
+  <input type="text" name="" id="higher" placeholder="Max Price" required>
+   <input type="submit" name="" id="">
+  </form>
+
+
+    <form action="" id="searchProd">
+      <input type="text" name="" id="sInp" placeholder="Search by product name">
+              <input type="submit" name="" id="">
+  </form>
+
+  </div>
+    <div id="product-container">
+    
+    </div>
+  </div>
+
+  <footer>
+
+  </footer>
+  </body>
+  <script type="module" src="./product.js">
+   
+  </script>
+</html>

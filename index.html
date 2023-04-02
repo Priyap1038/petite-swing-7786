@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <title >Interiora</title>
+
+  
+
+    <style>
+
+#topbar{
+    background-color: #b29079;
+   text-align: center;
+   height: 30px;
+   margin: auto;
+   align-items: center;
+ 
+
+}
+#secondtop{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid grey; */
+}
+#secondtop>div:nth-child(1){
+   width: 15%; 
+   display: flex;
+   gap: 2px;
+   justify-content: space-between;
+}
+#secondtop #log{
+    display: flex;
+    justify-content: space-between;
+}
+#secondtop>div:nth-child(2){
+   width: 30%; 
+   display: flex;
+   gap: 10px;
+   align-content: flex-end;
+}
+#third{
+
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: auto;
+}
+#third p:hover{
+    color:#E9967A;
+}
+nav>p:hover{
+    color:#E9967A;
+}
+#color{
+    text-decoration: none;
+}
+#color:hover{
+    color:#E9967A;
+}
+#icon{
+    width: 100%;
+    padding-top: 5%;
+}
+#icons{
+width: 80%;
+display: grid;
+grid-template-columns: repeat(8,1fr);
+margin: auto;
+
+}
+#icons>div{
+    width: 70%;
+    text-align: center;
+    margin: 5%;
+}
+
+#icons>div>img{
+    width: 100%;
+}
+#icons>div:hover{
+color: #E9967A;
+}
+#main{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    padding-top: 5%;
+    
+}
+#prod1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;  
+}
+#prod1>div{
+    width: 20%;
+    text-align: center;
+}
+#prod1>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+}
+#prod1>div>img{
+    width: 100%;
+}
+#prod2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#prod2>div{
+width: 23%;
+text-align: center;
+}
+#prod2>div>img{
+    width: 100%;
+}
+#previous{
+    width: 3%;
+    height:10%;
+    margin-top: 5%;
+}
+#previous2{
+    width: 3%;
+    height:10%;
+    margin-top: 10%;
+}
+#next{
+    width: 3%;
+    height:10%;
+    margin-top: 5%;
+}
+#next2{
+    width: 3%;
+    height:10%;
+    margin-top: 10%;
+}
+#image{
+    border-radius: 50%;
+    width: 100%;
+    height: 30px;
+}
+#image>img{
+    border-radius: 50%;
+}
+#more{
+    text-align: left;
+    margin-left:5%;
+    color:  #bd7158;
+}
+#image2{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#image2>img{
+    width: 70%;
+}
+#tagcolor{
+    color: #bd7158;
+}
+#btn1{
+    background-color: #bd7158;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 50%;
+    border-radius: 3px;
+}
+#btn2{
+    background-color: white;
+    color: #b04927;
+    border: none;
+    border: 1px solid #b04927;
+    height: 50px;
+    width: 20%;
+    border-radius: 3px;
+}
+#one1{
+    display: grid;
+    /* border: 2px solid black; */
+}
+
+#log{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+#search{
+    width: 80%;
+    margin-top: 3%;
+}
+#log2{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+/* #one{
+    position: absolute;
+    height: 10%;
+    width: 3%;
+    margin-top: 20%;
+    background-color: rgba(255, 255, 255, 0.836);
+    
+}
+#two{
+    position: absolute;
+    height: 10%;
+    width: 3%;
+    margin-left: 96%;
+    background-color: rgba(66, 5, 5, 0.836);
+    margin-block-end: 50%;
+
+} */
+
+        @media only screen and (max-width: 800px) {
+        /*medium Screen*/
+        #icons{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        }
+ 
+        } 
+    @media only screen and (max-width: 500px) {
+                /* Small Screen  */
+                #icons{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        }
+        #prod1{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 100%;
+            }
+            #prod1>img:nth-child(1){
+                display: none;
+            }
+            #prod1>img:nth-child(5){
+                display: none;
+            }
+            #prod2{
+            display: flex;
+            flex-direction:column;
+            
+             }
+
+            
+    }
+
+
+    </style>
+</head>
+<body>
+    <div id="topbar"><p>Set the Scene | Up to 50% Off | Click to shop!</p></div>
+
+    <div id="secondtop">
+        <div>
+            <p id="color"> Help</p>
+            <p id="color">Track Order</p>
+        </div>
+        <div>
+            <a href="./product.html"><p id="color">Store</p></a>
+           
+           <p id="color">Bulk Orders</p>
+           <p id="color">Gift Cards</p>
+           <p id="color">UL Services</p> 
+        </div>
+    </div>
+
+    <nav>
+
+    </nav>
+    <div id="third">
+        <p>Deal Zone</p>
+        <p>Sofas & Recliners</p>
+        <p>Living</p>
+        <p>Bedroom & Mattresses</p>
+        <p>Dining</p>
+        <p>Storage</p>
+        <p>Study</p>
+        <p>Lighting & Decor</p>
+        <p>Outdoor</p>
+        <p>Interiors</p>
+        <p>Trending</p>
+    </div>
+
+    <div id="poster">
+        <!-- <img src="https://cdn-icons-png.flaticon.com/128/130/130882.png" alt="" id="one"> -->
+        <img src="https://www.ulcdn.net/media/Slideshow/Beds-slideshow-2.jpg?1679042844" alt="">
+        <!-- <img src="https://cdn-icons-png.flaticon.com/128/130/130884.png" alt="" id="two"> -->
+    </div>
+
+    <div id="icon">
+
+         <h1 style="text-align: center; color:rgba(66, 5, 5, 0.836)">Explore Our Furniture Range</h1>
+
+        <div id="icons">
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/522/522568.png" alt="">
+                <p>Deal Zone</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/3757/3757397.png" alt="">
+                <p>Bestsellers</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/4564/4564774.png" alt="">
+                <p>Sofas</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/3009/3009931.png" alt="">
+                <p>Beds</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/9016/9016811.png" alt="">
+                <p>Dining</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/2755/2755641.png" alt="">
+                <p>Wardrobes</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/7703/7703482.png" alt="">
+                <p>Recliners</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/6151/6151135.png" alt="">
+                <p>Seating</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/7943/7943533.png" alt="">
+                <p>Coffee Tables</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/5766/5766861.png" alt="">
+                <p>TV Units</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/4682/4682416.png" alt="">
+                <p>Shoe Racks</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/2098/2098213.png" alt="">
+                <p>Study</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/2242/2242270.png" alt="">
+                <p>Bookshelves</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/6151/6151434.png" alt="">
+                <p>Lighting</p>
+            </div>
+            <div>
+                <img src="https://www.ulcdn.net/media/Web-home-popular-categories/store_icon.png?1535694121" alt="">
+                <p>Stores</p>
+            </div>
+        </div>
+    </div>
+    <div id="one1">
+        <div id="main">
+            <h1 style="text-align: center; color:rgba(66, 5, 5, 0.836)">Value Buys In Furniture</h1>
+            <div id="prod1">
+                <img src="https://cdn-icons-png.flaticon.com/128/130/130882.png" id="previous">
+               <div>
+                <img src="https://www.ulcdn.net/media/Collection/listings/Lounge_Chairs-taxon_7.png?1675918263" alt="">
+               </div>
+               <div>
+                <img src="https://www.ulcdn.net/media/Collection/listings/Beds_taxon_8.png?1675918266" alt="">
+               </div>
+               <div>
+                <img src="https://www.ulcdn.net/media/Collection/listings/Dining_Chairs-taxon_9.png?1675918269" alt="">
+               </div>
+               <img src="https://cdn-icons-png.flaticon.com/128/130/130884.png" id="next">
+            </div>
+        </div>
+        <div id="main">
+            <h1 style="text-align: center; color:rgba(66, 5, 5, 0.836)">Value Buys In Furniture</h1>
+            <div id="prod1">
+                <img src="https://cdn-icons-png.flaticon.com/128/130/130882.png" id="previous">
+               <div>
+                <img src="https://www.ulcdn.net/media/Collection/listings/Lamps___Lighting-taxon_1.png?1675922995" alt="">
+               </div>
+               <div>
+                <img src="https://www.ulcdn.net/media/Collection/listings/Bedsheets-taxon_2.png?1675922999" alt="">
+               </div>
+               <div>
+                <img src="https://www.ulcdn.net/media/Collection/listings/Carpets-taxon_3.png?1675923006" alt="">
+               </div>
+               <img src="https://cdn-icons-png.flaticon.com/128/130/130884.png" id="next">
+            </div>
+        </div>
+        <div id="main">
+            <h1 style="text-align: center; color:rgba(66, 5, 5, 0.836)">Value Buys In Furniture</h1>
+            <div id="prod2">
+                <img src="https://cdn-icons-png.flaticon.com/128/130/130882.png" id="previous2">
+               <div>
+                <img src="https://www.ulcdn.net/images/products/223893/product/Twain_Study_Table_LP.jpg?1544673336" alt="" title="Stanhope Engineered wood King (King Bed Size, Charcoal Grey)">
+                <p>Stanhope Engineered wood King</p>
+                <p>(King Bed Size, Charcoal Grey)</p>
+                <p>₹46,406</p>
+               </div>
+               <div>
+                <img src="https://www.ulcdn.net/images/products/82584/product/1956_Lounge___Ottoman_Replica_Black_LP.jpg?1519629745" alt="">
+                <p>Stanhope Engineered wood King</p>
+                <p>(King Bed Size, Charcoal Grey)</p>
+                <p>₹46,406</p>
+               </div>
+               <div>
+                <img src="https://www.ulcdn.net/images/products/159172/product/Thorpe_Upholstered_Storage_Bed_Queen_LP.jpg?1510822520" alt="">
+                <p>Stanhope Engineered wood King</p>
+                <p>(King Bed Size, Charcoal Grey)</p>
+                <p>₹46,406</p>
+               </div>
+               <div>
+                <img src="https://www.ulcdn.net/images/products/149928/product/lp_2.jpg?1548906916" alt="">
+                <p>Stanhope Engineered wood King</p>
+                <p>(King Bed Size, Charcoal Grey)</p>
+                <p>₹46,406</p>
+               </div>
+               <img src="https://cdn-icons-png.flaticon.com/128/130/130884.png" id="next2">
+            </div>
+        </div>
+    
+        <div id="main">
+            <h1 style="text-align: center; color:rgba(66, 5, 5, 0.836)">Customer Stories</h1>
+            <div id="prod1">
+                <img src="https://cdn-icons-png.flaticon.com/128/130/130882.png" id="previous2">
+               <div>
+               <div id="image">
+                <img src="https://graph.facebook.com/10154022464967981/picture?type=square" >
+               </div>
+                <h4>SHEEKA CHINNAPPA</h4>
+                <p id="tagcolor">via Facebook</p>
+               <div id="image2">
+                <img src="https://www.ulcdn.net/testimonials/250x300/2544_20160724072534.jpg" alt="" >
+               </div>
+                <p>Alexandria Book Shelf</p>
+                <button id="btn1">VIEW PRODUCT</button>
+                <P>"ULstory Striado Tv Unit, wanter egarly, beautiful ...</P>
+                <p id="more">More</p>
+               </div>
+               <div>
+                <div id="image">
+                    <img src="https://graph.facebook.com/10154063420535549/picture?type=square" >
+                   </div>
+                <h4>JAYANTHI MULLICK</h4>
+                <p id="tagcolor">via Facebook</p>
+                <div id="image2">
+                    <img src="https://www.ulcdn.net/testimonials/250x300/2601_20160807043752.jpg" alt="" >
+                   </div>
+                <p>Striado TV Unit</p>
+                <button id="btn1">VIEW PRODUCT</button>
+                <P>"ULstory Striado Tv Unit,just can't stop looking at it evrytime ...</P>
+                <p id="more">More</p>
+               </div>
+               <div>
+                <div id="image">
+                    <img src="https://graph.facebook.com/10210318850956442/picture?type=square" >
+                   </div>
+                <h4>SHRUTHI</h4>
+                <p id="tagcolor">via Facebook</p>
+                <div id="image2">
+                    <img src="https://www.ulcdn.net/testimonials/250x300/2607_20160808061023.jpg" alt="" >
+                   </div>
+                <p>Alexandria Book Shelf</p>
+                <button id="btn1">VIEW PRODUCT</button>
+                <P>"Having beautiful furniture in your home is not sbout modernity or ...</P>
+                <p id="more">More</p>
+               </div>
+               
+               <img src="https://cdn-icons-png.flaticon.com/128/130/130884.png" id="next2">
+            </div>
+            <h1 style="text-align: center;">
+                <button id="btn2">View All Customer Stories</button></h1>
+        </div>
+    </div>
+
+<footer>
+
+</footer>
+
+</body>
+
+</html>
+
+<script type="module" src="./index.js"></script>
